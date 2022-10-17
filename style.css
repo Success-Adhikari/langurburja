@@ -1,0 +1,90 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: rgb(159, 159, 221);
+  position: relative;
+}
+.container{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+#board{
+  position: relative;
+}
+#image{
+  width: 1500px;
+  aspect-ratio: 1.5;
+}
+.gan {
+  position: absolute;
+  left: 20px;
+  bottom: 400px;
+  font-size: 40px;
+  color: rgb(234, 54, 54);
+  font-family: cursive;
+}
+.los{
+  position: absolute;
+  right: 420px;
+  bottom: 400px;
+  font-size: 40px;
+  color: rgb(234, 54, 54);
+  font-family: cursive;
+}
+.a{
+  background-color: rgb(14, 109, 193);
+  position: absolute;
+}
+#choose{
+  left: 50px;
+  font-size: 40px;
+  top: 50px;
+}
+#roll{
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  bottom:30px;
+  font-size: 150px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#money{
+  right: 200px;
+  font-size: 40px;
+  top: 50px;
+}
+.n{
+  position: absolute;
+  color: white;
+  font-size: 60px;
+  font-size: 50px;
+
+}
+#Hukum{
+  top: 400px;
+  left: 380px;
+}
+#Bhurja{
+  top: 400px;
+  left:900px
+}
+#Chidi{
+  top: 400px;
+  left: 1350px;
+}
+#Etta{
+  top: 850px;
+  left: 380px;
+}
+#Jhandi{
+top: 850px;
+left: 900px;
+}
+#Pan{
+  top: 850px;
+  left:1350px;
+}
