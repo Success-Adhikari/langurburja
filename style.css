@@ -6,7 +6,9 @@ body{
   background-color: rgb(159, 159, 221);
   position: relative;
 }
+
 .container{
+  top: 0;
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -16,21 +18,21 @@ body{
   position: relative;
 }
 #image{
-  width: 1500px;
+  width: 750px;
   aspect-ratio: 1.5;
 }
 .gan {
   position: absolute;
   left: 20px;
-  bottom: 400px;
+  bottom: 200px;
   font-size: 40px;
   color: rgb(234, 54, 54);
   font-family: cursive;
 }
 .los{
   position: absolute;
-  right: 420px;
-  bottom: 400px;
+  right: 110px;
+  bottom: 200px;
   font-size: 40px;
   color: rgb(234, 54, 54);
   font-family: cursive;
@@ -40,51 +42,49 @@ body{
   position: absolute;
 }
 #choose{
-  left: 50px;
-  font-size: 40px;
+  left:25px;
+  font-size: 20px;
   top: 50px;
 }
 #roll{
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
-  bottom:30px;
-  font-size: 150px;
+  bottom:15px;
+  font-size: 75px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #money{
-  right: 200px;
+  right: 100px;
   font-size: 40px;
   top: 50px;
 }
 .n{
   position: absolute;
   color: white;
-  font-size: 60px;
-  font-size: 50px;
-
+  font-size: 30px;
 }
 #Hukum{
-  top: 400px;
-  left: 380px;
+  top: 200px;
+  left: 190px;
 }
 #Bhurja{
-  top: 400px;
-  left:900px
+  top: 200px;
+  left:450px
 }
 #Chidi{
-  top: 400px;
-  left: 1350px;
+  top: 200px;
+  left: 675px;
 }
 #Etta{
-  top: 850px;
-  left: 380px;
+  top: 425px;
+  left: 190px;
 }
 #Jhandi{
-top: 850px;
-left: 900px;
+top: 425px;
+left: 450px;
 }
 #Pan{
-  top: 850px;
-  left:1350px;
+  top: 425px;
+  left:675px;
 }
