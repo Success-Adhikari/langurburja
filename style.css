@@ -23,15 +23,15 @@ body{
 }
 .gan {
   position: absolute;
-  left: 700px;
   bottom: 40px;
+  margin-left: 300px;
   font-size: 40px;
   color: rgb(217, 255, 0);
   font-family: cursive;
   background-color: black;
 }
 .los{
-  position: absolute;
+  position: fixed;
   right: 110px;
   bottom: 200px;
   font-size: 40px;
@@ -45,7 +45,8 @@ body{
 #choose{
   left:25px;
   font-size: 20px;
-  top: 50px;
+  top: 100px;
+  position: absolute;
 }
 .Fund{
   position: fixed;
@@ -56,7 +57,7 @@ body{
   background-color: black;
   padding: 3px;
   border-top: 0;
-  
+  z-index: 1;
 }
 #roll{
   border-radius: 10px;
@@ -64,13 +65,14 @@ body{
   cursor: pointer;
   bottom:15px;
   font-size: 75px;
-  left: 500px;
+  margin-right: 130px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #money{
-  right: 100px;
+  position: absolute;
+  right: 1vw;
   font-size: 40px;
-  top: 50px;
+  top: 100px;
 }
 .n{
   position: absolute;
@@ -100,4 +102,38 @@ left: 450px;
 #Pan{
   top: 425px;
   left:675px;
+}
+@media only screen and (max-width: 1115px) {
+  #image {
+    width: 550px;
+  }
+  #money,#choose{
+    font-size: 20px;
+  }
+  #choose{
+    max-width: 80px;    
+    float: right;
+  }
+}
+@media only screen and (max-width: 780px) {
+  #image{
+    width: 100vw;
+  }
+  .Fund{
+    font-size: 5vw;
+  }
+  #roll{
+    font-size: 20vw;
+    bottom: 20vw;
+    margin-left: 50vw;
+  }
+  .gan{
+    bottom: 0;
+    width: 100vw;
+    position: fixed;
+    right: 0px;
+  }
+  #choose,#money{
+    top: 40vh;
+  }
 }
