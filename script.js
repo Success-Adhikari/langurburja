@@ -1,8 +1,19 @@
 let total = ["Hukum","Bhurja","Chidi","Etta","Jhandi","Pan"]
+var fund = 100;
+var mon,sts;    
+var fundTxt = document.getElementById('funds');
 function reset(){
     for(var i =0;i<6;i++){
         document.getElementById(total[i]).innerText = "";
         }  
+}
+funding();
+function funding(){
+fundTxt.innerHTML = fund;
+if(fund <= 0){
+    alert("Game Over");
+    location.reload();
+}
 }
 function Roll(){
     reset();
@@ -14,19 +25,19 @@ function Roll(){
     var select2 = document.getElementById('money');
     var value = select.options[select.selectedIndex].value;
     var money = select2.options[select2.selectedIndex].value;
-
     var abcd = document.getElementById(value);
-    var mon = abcd.innerText.length*money;
-    if (value == "Select Where to Try Luck"){
 
-        alert("First Choose Card and Money");
-    }
-    if( mon  => money){
-        document.getElementById('gain').innerText = mon;
-         document.getElementById('loss').innerText = 0;
+    if(abcd.innerText.length > 1){
+     mon = abcd.innerText.length*money;
     }else{
-     document.getElementById('gain').innerText = 0;
-    document.getElementById('loss').innerText = money;
+        mon = 0
     }
-
+    if(mon>money){
+        sts = "+$"+(mon-money);
+    }else{
+    sts = "-$"+(money-mon);
+    }
+    fund = fund + (mon-money);
+funding();
+    document.getElementById('gain').innerHTML = sts;
 }
