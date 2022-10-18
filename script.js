@@ -1,5 +1,4 @@
 let total = ["Hukum","Bhurja","Chidi","Etta","Jhandi","Pan"]
-
 function reset(){
     for(var i =0;i<6;i++){
         document.getElementById(total[i]).innerText = "";
@@ -19,11 +18,15 @@ function Roll(){
     var abcd = document.getElementById(value);
     var mon = abcd.innerText.length*money;
     if (value == "Select Where to Try Luck"){
-        
+
         alert("First Choose Card and Money");
     }
-    document.getElementById('gain').innerText = mon - money;
-    document.getElementById('loss').innerText = money - mon;
-
+    if( mon  => money){
+        document.getElementById('gain').innerText = mon;
+         document.getElementById('loss').innerText = 0;
+    }else{
+     document.getElementById('gain').innerText = 0;
+    document.getElementById('loss').innerText = money;
+    }
 
 }
