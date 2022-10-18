@@ -23,11 +23,12 @@ body{
 }
 .gan {
   position: absolute;
-  left: 20px;
-  bottom: 200px;
+  left: 700px;
+  bottom: 40px;
   font-size: 40px;
-  color: rgb(234, 54, 54);
+  color: rgb(217, 255, 0);
   font-family: cursive;
+  background-color: black;
 }
 .los{
   position: absolute;
@@ -46,12 +47,24 @@ body{
   font-size: 20px;
   top: 50px;
 }
+.Fund{
+  position: fixed;
+  right: 0;
+  top: 0; 
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  padding: 3px;
+  border-top: 0;
+  
+}
 #roll{
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
   bottom:15px;
   font-size: 75px;
+  left: 500px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #money{
