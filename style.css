@@ -1,0 +1,159 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: rgb(159, 159, 221);
+  position: relative;
+}
+
+.container{
+  top: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+#board{
+  position: relative;
+}
+#image{
+  width: 750px;
+  aspect-ratio: 1.5;
+  float: left;
+}
+.gan {
+  position: fixed;
+  bottom: 40px;
+  margin-left: 300px;
+  font-size: 40px;
+  right: 15vw;
+  color: rgb(217, 255, 0);
+  font-family: cursive;
+  background-color: black;
+}
+.dices{
+  position: fixed;
+  bottom:3vh;
+  left: 3vw;
+}
+.dice{
+  width: 95px;
+  height: 95px;
+}
+.los{
+  position: fixed;
+  right: 110px;
+  bottom: 200px;
+  font-size: 40px;
+  color: rgb(234, 54, 54);
+  font-family: cursive;
+}
+.a{
+  background-color: rgb(14, 109, 193);
+}
+#choose{
+  right:70px;
+  font-size: 40px;
+  top: 100px;
+  position: absolute;
+}
+.Fund{
+  position: fixed;
+  right: 0;
+  top: 0; 
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  padding: 3px;
+  border-top: 0;
+  z-index: 1;
+}
+#roll{
+  border-radius: 10px;
+  padding: 10px;
+  position: fixed;
+  cursor: pointer;
+  float: right;
+  top:45vh;
+  right: 15vw;
+  background-color: rgb(0, 255, 247);
+  font-size: 75px;
+  max-width: fit-content;
+  max-height: fit-content;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#roll:hover{
+  background-color: rgb(199, 72, 72);
+}
+#money{
+  position: absolute;
+  right: 14vw;
+  font-size: 40px;
+  top: 200px;
+}
+.n{
+  position: absolute;
+  color: white;
+  font-size: 3vw;
+}
+#Hukum{
+  top: 1vh;
+  left: 0vw;
+}
+#Bhurja{
+  top: 30vh;
+  left:32vw
+}
+#Chidi{
+  top: 30vh;
+  left: 48vw;
+}
+#Etta{
+  top: 65vh;
+  left: 13vw;
+}
+#Jhandi{
+top: 65vh;
+left: 32vw;
+}
+#Pan{
+  top: 65vh;
+  left:48vw;
+}
+
+@media only screen and (max-width: 1115px) {
+  #image {
+    width: 550px;
+  }
+  #money,#choose{
+    font-size: 20px;
+  }
+  #choose{
+    max-width: 80px;    
+    float: right;
+  }
+}
+@media only screen and (max-width: 780px) {
+
+  #image{
+    width: 100vw;
+  }
+  .Fund{
+    font-size: 5vw;
+  }
+  #roll{
+    font-size: 20vw;
+    bottom: 20vw;
+    margin-left: 50vw;
+    float: right;
+  }
+  .gan{
+    bottom: 0;
+    width: 100vw;
+    position: fixed;
+    right: 0px;
+  }
+  #choose,#money{
+    top: 40vh;
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jhandi Burja</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="jhandi.png">
+</head>
+<body>
+  <div class="Fund" id="Fund">Fund: $<span id="funds">0</span></div>
+  <div class="container">
+    <div class="board" id="board">
+      <img src="game.jpg" id="image">
+    </div>
+    <buttton class="a" id="roll" onclick="Roll()">Roll</buttton>
+    <select name="Choose" class="a" id="choose">
+      <option>Select Where to Try Luck</option>
+      <option>Hukum</option>
+      <option>Bhurja</option>
+      <option>Chidi</option>
+      <option>Etta</option>
+      <option>Jhandi</option>
+      <option>Pan</option>
+    </select>
+    <p class="gan">Status = <span id="gain">$0</span> </p>
+    <select name="Money" class="a" id="money">
+      <option>Money?</option>
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="50">50</option>
+      <option value="100">100</option>
+      <option value="500">500</option>
+      <option value="1000">1000</option>
+    </select>
+    <div class="dices" id="dices">
+    <img class="dice" src="jhandi.png" id="d1">
+    <img class="dice" src="hukum.png" id="d2">
+    <img class="dice" src="etta.png" id="d3">
+    <img class="dice" src="pan.png" id="d4">
+    <img class="dice" src="chidi.png" id="d5">
+    <img class="dice" src="bhurja.png" id="d6">
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
