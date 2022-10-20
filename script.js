@@ -20,7 +20,7 @@ var slted=0;
 
     for(var i =1;i<=6;i++){
     var a = Math.floor(Math.random()*total.length);
-    document.getElementById("d"+i).src = total[a] +".png";
+    document.getElementById("d"+i).src = total[a].toLocaleLowerCase() +".png";
     if(value == total[a]){
         slted = slted + 1;
     }
