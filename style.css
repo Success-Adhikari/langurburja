@@ -39,7 +39,31 @@ body{
 .dice{
   width: 95px;
   aspect-ratio: 1;
+  border-radius: 10px;
+  animation-name: rolling;
+  animation-play-state: paused;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
+@keyframes rolling {
+ 0%{
+  width: 95px;
+ }
+ 25%{
+  width: 0px;
+ }
+ 50%{
+  width: 95px;
+ }
+ 75%{
+  width: 0px;
+ }
+ 100%{
+  width: 95px;
+ }
+}
+
 .los{
   position: fixed;
   right: 110px;
